@@ -34,6 +34,14 @@ errMsg[23] = 'Floor no is greater than the total no of hotel';
 errMsg[24] = 'No more rooms can be added on current floor';
 errMsg[25] = 'Room addition limit exausted';
 errMsg[26] = commonMsg[3];
+errMsg[27] = commonMsg[4];
+errMsg[28] = 'No hotel found with following id.';
+errMsg[29] = commonMsg[3];
+errMsg[30] = commonMsg[1];
+errMsg[31] = commonMsg[4];
+errMsg[32] = 'No room detail found againsts roomId';
+errMsg[33] = 'No room available for following dates';
+errMsg[34] = commonMsg[3];
 
 module.exports = {
   sendResponse(data) {

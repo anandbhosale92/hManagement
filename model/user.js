@@ -4,9 +4,6 @@ const saltRounds = 10;
 module.exports = {
   async checkUser(data) {
     const checkQuery =  { $or: [{email: data.email}, {_id : objectID(data.userId) }]  };
-    // else {
-    //   checkQuery['$or'][0].role = data.role.toUpperCase();
-    // }
 
     const response = await mongoClient.collection(userDB).findOne(checkQuery);
 
@@ -41,7 +38,6 @@ module.exports = {
        * 2.key is not null or undefined
        * 3.if key is passed in objData exist in it
        */
-      // console.log(data[key]);
       if (key === 'password') {
         data[key] = await bcrypt.hash(data[key], saltRounds)
       }

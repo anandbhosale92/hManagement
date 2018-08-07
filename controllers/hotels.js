@@ -2,7 +2,6 @@ const user           = require('../model/user');
 const hotels         = require('../model/hotels');
 const commonFunction = require('../handlers/common');
 const sendResp       = require('../handlers/sendResponse');
-const moment 				 = require('moment');
 
 const response = {};
 module.exports = {

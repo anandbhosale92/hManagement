@@ -19,6 +19,7 @@ mongo.connect(mongoUrl, function (err, db) {
   global.hotelsDB     = process.env.hotelsDB || 'hotels';
   global.userDB       = process.env.userDB || 'users';
   global.roomsDB      = process.env.roomsDB || 'rooms';
+  global.bookingDB    = process.env.bookingDB || 'bookinghistory';
 });
 app.use(bodyParser.json());
 //  Connect all our routes to our application

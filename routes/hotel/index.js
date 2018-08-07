@@ -9,5 +9,7 @@ router.post('/hotel/addHotel', hotels.addHotels);
 router.post('/hotel/addRooms', rooms.addRooms);
 router.patch('/hotel/:hotelId', hotels.update);
 router.delete('/hotel/remove', hotels.remove);
+router.post('/hotel/getrooms', rooms.getRooms);
+router.post('/hotel/book', rooms.bookRoom);
 
 module.exports = router;
