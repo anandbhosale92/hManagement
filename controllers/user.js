@@ -64,7 +64,7 @@ module.exports = {
     let data    = req.body;
     data.userId = req.params.userId;
 
-    const requiredParam = ['name','password', 'confirmPass', 'mobile'];
+    const requiredParam = ['name','email','password', 'confirmPass', 'mobile'];
 
     if (!commonFunction.checkEmptyValue(data, requiredParam)) {
       response.type = 'E';

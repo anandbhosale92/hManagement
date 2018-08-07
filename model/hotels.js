@@ -8,7 +8,6 @@ module.exports = {
       totalRooms       : data.totalRooms,
       noOfFloors       : data.noOfFloors,
       noOfRoomPerFloor : data.noOfRoomPerFloor,
-      roomsOccupied    : 0,
       insertedOn       : new Date()
     };
 

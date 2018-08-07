@@ -74,6 +74,19 @@ module.exports = {
       sendResp.sendResponse(response);
       return;
     }
+
+    //CHECK FOR USER ALREADY EXSITS OR NOT
+    //IF USERS ROLE = {USER} THEN RETURN
+    const isExists = await user.checkUser(data);
+
+    if (!isExists || isExists.role === 'USER') {
+      response.type = 'E';
+      response.code = 18;
+
+      sendResp.sendResponse(response);
+      return;
+    }
+
     data.hotelId = hotelId;
 
     //ALL SET
